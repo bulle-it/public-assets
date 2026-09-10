@@ -25,8 +25,13 @@ Output is deterministic; a clean run produces no diff unless `gen.py` changed.
 5. Re-attach the changed node(s) in Xmind (MCP `xmind_set_topic_image`):
    - fileId `owA1I1tG`, sheetId `bd65bfcf-ba51-4d40-843f-77e418699458`
    - topicId = the anchor
-   - imageUrl = `https://raw.githubusercontent.com/bulle-it/public-assets/main/trainings/TM_Claude_Atelier01_Decouverte/<file>`
-   Xmind re-fetches and replaces its stored copy (`xap:resources/<hash>.svg`).
+   - imageUrl = `https://raw.githubusercontent.com/bulle-it/public-assets/main/trainings/TM_Claude_Atelier01_Decouverte/<file>?v=N`
+   Bump `N` whenever the file name is unchanged but the content changed, so Xmind
+   treats it as a new URL and re-fetches (raw.githubusercontent.com ignores the
+   query string). Confirm with `xmind_get_topic`: `imageSource` hash must change.
+
+Note: every SVG carries `width`/`height` (viewBox x2). Without an intrinsic size
+Xmind pins the image small and double-click zoom does nothing.
 
 ## Palette
 
