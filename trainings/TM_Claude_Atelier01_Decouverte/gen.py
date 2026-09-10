@@ -15,8 +15,10 @@ FONT='font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif"'
 MONO='font-family="ui-monospace,Menlo,Consolas,monospace"'
 
 def esc(s): return html.escape(str(s), quote=True)
+SCALE = 2  # explicit px size = viewBox * SCALE, so Xmind reads an intrinsic size and renders crisp
 def svg(frag):
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" {FONT}>'
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W*SCALE}" height="{H*SCALE}" '
+            f'viewBox="0 0 {W} {H}" {FONT}>'
             f'<rect width="{W}" height="{H}" rx="18" fill="{BG}"/>'
             f'<rect x="0" y="0" width="{W}" height="8" fill="{ACCENT}"/>{frag}</svg>\n')
 def wrap(t,x,y,size,fill,mc,lh=None,weight=None,anchor="start",family=None):
