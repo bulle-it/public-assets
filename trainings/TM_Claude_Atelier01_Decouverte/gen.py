@@ -259,6 +259,16 @@ add("fcfa7c44-ba6e-4e31-bf5f-e4d71da3d3e6","03_claude-code",
     f_terminal("Claude Code — agent sur un dossier / projet","~/projets/mon-app","claude",["Lecture du dossier…","J'ai trouvé 3 scripts. Que veux-tu faire ?"]))
 add("adcff8c7-f361-4565-9450-311f5099cbde","03_code-terminal-agent",f_card("Terminal — agent sur un projet","Sur un dossier : code, scripts, skills. Il lit, écrit et lance des commandes.","term","Section 3"))
 
+# 03b — Niveaux d'acquisition (added 2026-09-11, correlated to the 4 Composants)
+add("b8695c20-8cfa-4ab4-8ff4-9ce4f1d056a7","03b_niveau1-je-discute",f_card("Niveau 1 — Je discute","Une question, une réponse. Le point d'entrée le plus simple.","chat","Claude web"))
+add("72ee2073-786c-416e-bc87-949cea25b59c","03b_niveau1-cas-usage",f_card("Cas d'usage","« Quelle est la RAM 16 Go la moins chère en France ? »","search","Niveau 1"))
+add("df0a694b-abea-4e32-80f2-08b67c3bd262","03b_niveau2-je-mequipe",f_card("Niveau 2 — Je m'équipe","Je branche mes fichiers et mes outils.","plug","Claude Desktop"))
+add("8cc579fc-a908-47c1-93a6-b4fea93416d4","03b_niveau2-cas-usage",f_card("Cas d'usage","Résumer un PDF local et préparer un mail via le connecteur Gmail","mail","Niveau 2"))
+add("c4ee4e99-601e-4aa8-b2c0-872dc3d5cee0","03b_niveau3-je-delegue",f_card("Niveau 3 — Je délègue","Je décris un résultat, Claude enchaîne seul.","steer","Cowork"))
+add("4806318d-a5cf-47ec-a433-7fbda1f775ca","03b_niveau3-cas-usage",f_card("Cas d'usage","« Prends ces 10 factures PDF et fais-moi un tableau Excel récapitulatif »","table","Niveau 3"))
+add("73441ae0-9d29-41f5-9176-5765eeddf3b9","03b_niveau4-je-fais-construire",f_card("Niveau 4 — Je fais construire","Sur un projet complet, en autonomie.","term","Claude Code"))
+add("a057ed4f-99ff-45c1-b16b-9260b169b221","03b_niveau4-cas-usage",f_card("Cas d'usage","« Écris-moi un script qui renomme mes photos par date de prise de vue »","gear","Niveau 4"))
+
 # 04
 add("6a18ddbb-807f-4639-a318-516973256dfe","04_bonnes-pratiques",
     f_section("Section 4","Bonnes pratiques & limites","Donner le contexte, itérer par petits pas, vérifier, choisir ce qu'on partage.",
