@@ -34,6 +34,8 @@ Raw base: `https://raw.githubusercontent.com/bulle-it/public-assets/main/trainin
 | `c437c594-b2ec-4213-87c9-e3bf3d8b9d71` | TM_Claude_Atelier01_Decouverte_03_cowork-mode-delegation.svg |
 | `fcfa7c44-ba6e-4e31-bf5f-e4d71da3d3e6` | TM_Claude_Atelier01_Decouverte_03_claude-code.svg |
 | `adcff8c7-f361-4565-9450-311f5099cbde` | TM_Claude_Atelier01_Decouverte_03_code-terminal-agent.svg |
+| `3ae6be98-0b35-4345-a0d3-036cf48030fc` | TM_Claude_Atelier01_Decouverte_03_claude-web-pwa.svg |
+| `46f93ca1-cb00-4099-b821-1a7560a9f7a5` | TM_Claude_Atelier01_Decouverte_03b_niveaux-acquisition.svg |
 | `b8695c20-8cfa-4ab4-8ff4-9ce4f1d056a7` | TM_Claude_Atelier01_Decouverte_03b_niveau1-je-discute.svg |
 | `72ee2073-786c-416e-bc87-949cea25b59c` | TM_Claude_Atelier01_Decouverte_03b_niveau1-cas-usage.svg |
 | `df0a694b-abea-4e32-80f2-08b67c3bd262` | TM_Claude_Atelier01_Decouverte_03b_niveau2-je-mequipe.svg |
