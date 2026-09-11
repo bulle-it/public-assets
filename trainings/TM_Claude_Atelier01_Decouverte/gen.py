@@ -258,8 +258,12 @@ add("c437c594-b2ec-4213-87c9-e3bf3d8b9d71","03_cowork-mode-delegation",f_card("M
 add("fcfa7c44-ba6e-4e31-bf5f-e4d71da3d3e6","03_claude-code",
     f_terminal("Claude Code — agent sur un dossier / projet","~/projets/mon-app","claude",["Lecture du dossier…","J'ai trouvé 3 scripts. Que veux-tu faire ?"]))
 add("adcff8c7-f361-4565-9450-311f5099cbde","03_code-terminal-agent",f_card("Terminal — agent sur un projet","Sur un dossier : code, scripts, skills. Il lit, écrit et lance des commandes.","term","Section 3"))
+add("3ae6be98-0b35-4345-a0d3-036cf48030fc","03_claude-web-pwa",f_card("PWA installable","Chrome : ⋮ → « Installer la page en tant qu'appli ». 100 % identique au web — aucune capacité locale en plus.","download","Section 3"))
 
 # 03b — Niveaux d'acquisition (added 2026-09-11, correlated to the 4 Composants)
+add("46f93ca1-cb00-4099-b821-1a7560a9f7a5","03b_niveaux-acquisition",
+    f_section("Niveaux","Niveaux d'acquisition","Quatre niveaux, corrélés aux composants : je discute → je m'équipe → je délègue → je fais construire.",
+              motif_tiles([("Niveau 1","chat"),("Niveau 2","plug"),("Niveau 3","steer"),("Niveau 4","term")])))
 add("b8695c20-8cfa-4ab4-8ff4-9ce4f1d056a7","03b_niveau1-je-discute",f_card("Niveau 1 — Je discute","Une question, une réponse. Le point d'entrée le plus simple.","chat","Claude web"))
 add("72ee2073-786c-416e-bc87-949cea25b59c","03b_niveau1-cas-usage",f_card("Cas d'usage","« Quelle est la RAM 16 Go la moins chère en France ? »","search","Niveau 1"))
 add("df0a694b-abea-4e32-80f2-08b67c3bd262","03b_niveau2-je-mequipe",f_card("Niveau 2 — Je m'équipe","Je branche mes fichiers et mes outils.","plug","Claude Desktop"))
