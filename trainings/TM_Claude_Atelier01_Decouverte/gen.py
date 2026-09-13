@@ -359,6 +359,36 @@ add("8c94d810-2cea-48b7-b591-d7502bbc4f18","08_configuration",
 add("e26a0d54-6faf-45bc-b601-1092b4e1aa34","08_configuration_menus",
     f_panel("Configuration — les menus",[("Général","modèle, langue, thème"),("Connecteurs","ajouter / retirer un service"),("Extensions","serveurs MCP, un clic"),("Confidentialité","historique, mémoire, partage")],"Section 8"))
 
+# 05b — Pour aller plus loin (added 2026-09-13, one branch per Composant, reusing its Niveau)
+add("9659aee7-2679-45cb-a3eb-84ab317d1dd5","05b_pour-aller-plus-loin",
+    f_section("Section 5","Pour aller plus loin","Un aperçu des portes pour creuser plus loin, si tu le souhaites — pas besoin d'aller plus loin aujourd'hui.",
+              motif_tiles([("web","globe"),("Desktop","device"),("Cowork","steer"),("Code","term")])))
+add("81c644f3-b462-4336-be6a-1a96530c2b1f","05b_web-plus-loin",
+    f_card("Claude web → aller plus loin","Une porte pour creuser : les Artifacts.","globe","Niveau 1"))
+add("ed9fbc7e-daac-4e54-81ae-407fa411d1a6","05b_web-artifacts",
+    f_card("Artifacts","Documents, mini-apps générés et partageables depuis le chat.","grid","Niveau 1 — Je discute"))
+add("84ac48ab-cbc2-4e3c-a6fc-5f73c1e1463d","05b_desktop-plus-loin",
+    f_card("Claude Desktop → aller plus loin","Une porte pour creuser : le MCP.","device","Niveau 2"))
+add("121cb037-cf8e-4c4c-9635-67873815ff36","05b_desktop-mcp",
+    f_card("MCP","Brancher des outils tiers (Xmind, Jira, Drive…) au-delà des connecteurs grand public.","plug","Niveau 2 — Je m'équipe"))
+add("4a9a9594-78da-4987-829a-ea1d7dc12c25","05b_cowork-plus-loin",
+    f_card("Cowork → aller plus loin","Une porte pour creuser : les sous-agents.","steer","Niveau 3"))
+add("b66a2c94-3c3f-4f07-b3f9-3a6363384486","05b_cowork-sous-agents",
+    f_card("Sous-agents","Un agent qui en pilote d'autres en parallèle, sur une tâche complexe.","split","Niveau 3 — Je délègue"))
+add("06ce783e-5526-4997-af28-fad92f4b0eab","05b_code-plus-loin",
+    f_card("Claude Code → aller plus loin","Deux portes pour creuser : automatiser, personnaliser.","term","Niveau 4"))
+add("ecdeb6ba-c1f4-4d86-b578-a2d1711bc585","05b_code-automatiser",
+    f_section("Niveau 4","Automatiser dans le temps","Trois façons de faire tourner Claude Code sans être devant l'écran.",
+              motif_tiles([("VS Code","term"),("cloud","globe"),("cron","clock")])))
+add("13cf4142-856d-4495-bf3c-3030f6e54466","05b_code-automatiser-vscode",
+    f_card("Via VS Code (session)","Tourne pendant que tu travailles. S'arrête à la fermeture de la session.","term","Niveau 4 — Je fais construire"))
+add("19437a85-68a9-4a79-88e7-09efb4c9966f","05b_code-automatiser-cloud",
+    f_card("À distance (cloud)","Planifiée (cron), survit à la fermeture. Nécessite un dépôt GitHub.","globe","Niveau 4 — Je fais construire"))
+add("dc7db948-283f-41d7-8f41-4a83c8cacc17","05b_code-automatiser-cron",
+    f_card("En local programmé","Cron de ta machine + claude -p. Accès fichiers et réseau local.","clock","Niveau 4 — Je fais construire"))
+add("685bf8e5-1b65-4d26-af4e-8f3b1dfe8be2","05b_code-personnaliser",
+    f_card("Personnaliser en profondeur","CLAUDE.md (instructions permanentes) + skills (commandes réutilisables).","gear","Niveau 4 — Je fais construire"))
+
 # ---- write ----
 os.makedirs(OUT, exist_ok=True)
 seen=set(); rows=[]
