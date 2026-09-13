@@ -91,3 +91,16 @@ Raw base: `https://raw.githubusercontent.com/bulle-it/public-assets/main/trainin
 | `1b0bc325-7475-4166-9088-635d02ba88a9` | TM_Claude_Atelier01_Decouverte_08_installation_menus.svg |
 | `8c94d810-2cea-48b7-b591-d7502bbc4f18` | TM_Claude_Atelier01_Decouverte_08_configuration.svg |
 | `e26a0d54-6faf-45bc-b601-1092b4e1aa34` | TM_Claude_Atelier01_Decouverte_08_configuration_menus.svg |
+| `9659aee7-2679-45cb-a3eb-84ab317d1dd5` | TM_Claude_Atelier01_Decouverte_05b_pour-aller-plus-loin.svg |
+| `81c644f3-b462-4336-be6a-1a96530c2b1f` | TM_Claude_Atelier01_Decouverte_05b_web-plus-loin.svg |
+| `ed9fbc7e-daac-4e54-81ae-407fa411d1a6` | TM_Claude_Atelier01_Decouverte_05b_web-artifacts.svg |
+| `84ac48ab-cbc2-4e3c-a6fc-5f73c1e1463d` | TM_Claude_Atelier01_Decouverte_05b_desktop-plus-loin.svg |
+| `121cb037-cf8e-4c4c-9635-67873815ff36` | TM_Claude_Atelier01_Decouverte_05b_desktop-mcp.svg |
+| `4a9a9594-78da-4987-829a-ea1d7dc12c25` | TM_Claude_Atelier01_Decouverte_05b_cowork-plus-loin.svg |
+| `b66a2c94-3c3f-4f07-b3f9-3a6363384486` | TM_Claude_Atelier01_Decouverte_05b_cowork-sous-agents.svg |
+| `06ce783e-5526-4997-af28-fad92f4b0eab` | TM_Claude_Atelier01_Decouverte_05b_code-plus-loin.svg |
+| `ecdeb6ba-c1f4-4d86-b578-a2d1711bc585` | TM_Claude_Atelier01_Decouverte_05b_code-automatiser.svg |
+| `13cf4142-856d-4495-bf3c-3030f6e54466` | TM_Claude_Atelier01_Decouverte_05b_code-automatiser-vscode.svg |
+| `19437a85-68a9-4a79-88e7-09efb4c9966f` | TM_Claude_Atelier01_Decouverte_05b_code-automatiser-cloud.svg |
+| `dc7db948-283f-41d7-8f41-4a83c8cacc17` | TM_Claude_Atelier01_Decouverte_05b_code-automatiser-cron.svg |
+| `685bf8e5-1b65-4d26-af4e-8f3b1dfe8be2` | TM_Claude_Atelier01_Decouverte_05b_code-personnaliser.svg |
