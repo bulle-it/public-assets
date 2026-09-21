@@ -70,7 +70,8 @@ def f_privacy():
     for x in (150, 301):
         o += f'<path d="M{x} 168h26" stroke="{ACCENT}" stroke-width="3" stroke-linecap="round"/>'
         o += f'<path d="M{x+19} 160l8 8-8 8" fill="none" stroke="{ACCENT}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>'
-    o += f'<text x="240" y="264" fill="{SUB}" font-size="12" text-anchor="middle">Nothing is published</text>'
+    o += f'<text x="240" y="256" fill="{SUB}" font-size="12" text-anchor="middle">Your file is never uploaded and nothing is published</text>'
+    o += f'<text x="240" y="274" fill="{MUTE}" font-size="10.5" text-anchor="middle">A few short phrases may be searched on the web to look for copies</text>'
     return o
 
 def f_limits():
