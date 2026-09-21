@@ -68,10 +68,10 @@ def f_rules():
 
 def f_next():
     return steps2("Next steps", "Five small steps", [
-        "Add SearXNG with DuckDuckGo",
-        "Test exact phrases on public text",
-        "Send a new canary through each route",
-        "Check the first canary again in autumn",
+        "SearXNG with Brave Search: built and tested",
+        "Test rare passages, not only famous ones",
+        "Read Brave's terms on automated use",
+        "Check the two canaries in autumn",
         "Register for the free CORE key"])
 
 SPEC = []
