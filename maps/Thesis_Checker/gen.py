@@ -1,52 +1,83 @@
 #!/usr/bin/env python3
-# Flat-vector SVG set for the Xmind sheet "Your thesis checker" (file mKRiB2a3, sheet 34ea33d4-...).
-# One image on the centre topic and one per top-level branch.
-# Palette and primitives: ../../lib/flatvec.py — shared with every image set in this repo.
-# Public repo: no personal names or project data in the images, only generic wording.
+# Flat-vector SVG set for the merged Xmind sheet "Souhila: your thesis checker" (file mKRiB2a3,
+# sheet 53b1949c-...). One image on the centre topic, one per top-level branch, one per step of
+# "How a run goes", one per check in "The four checks".
+# Palette and primitives: ../../lib/flatvec.py (shared).
+# Public repo: no personal names and no project data, only generic wording.
 import os, sys
-
 OUT = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(OUT, os.pardir, os.pardir, "lib"))
 from flatvec import *  # noqa: F401,F403
-
 PFX = "Thesis_Checker"
 RAWBASE = "https://raw.githubusercontent.com/bulle-it/public-assets/main/maps/Thesis_Checker"
 
-def head(eb, title):
-    return eyebrow(eb) + wrap(title, 38, 76, 22, INK, 32, weight=700)[0]
-
 FOUR = [("Layout", "table"), ("Language", "chat"), ("Originality", "search"), ("Machine text", "brain")]
-
-# ---- builders ----
-def steps2(eb, title, items):
-    o = eyebrow(eb) + wrap(title, 38, 76, 22, INK, 28, weight=700)[0]; yy = 116
-    for i, t in enumerate(items, 1):
-        o += f'<circle cx="52" cy="{yy}" r="13" fill="{ACCENT}"/><text x="52" y="{yy+4}" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">{i}</text>'
-        tl, nn = wrap(t, 76, yy+4, 12, INK, 54, lh=14); o += tl; yy += max(34, nn*14+20)
-    return o
 
 def f_root():
     return f_section("Thesis checker", "Your thesis checker",
-                     "A careful second reader: layout, language, originality and a machine-text signal. It suggests and never rewrites.",
-                     motif_tiles(FOUR))
+                      "A careful second reader: layout, language, originality and a machine-text signal. It suggests and never rewrites.",
+                      motif_tiles(FOUR))
 
 def f_what():
     return f_card("A careful second reader",
                   "It checks four things and gives you suggestions. It never rewrites your text and never touches your original.",
                   "eye", "suggestions only")
 
-def f_run():
-    return steps2("How a run goes", "From your file to your inbox", [
-        "You drop a Word file on Drive",
-        "Christophe starts the checker",
-        "The checks run on a copy of your file",
-        "A commented copy and a report land on Drive",
-        "You receive two links by email, no attachments"])
+def f_run_top():
+    return f_card("Five small steps",
+                   "From your file on Drive to two links back in your inbox, each step below shown on its own.",
+                   "steer", "how a run goes")
 
-def f_checks():
+def f_step1():
+    return f_card("You drop your file", "Save your chapter as a Word file in the shared input folder on Drive.", "folder", "step 1 of 5")
+
+def f_step2():
+    return f_card("Christophe starts the checker", "Whenever you are ready. Nothing runs on its own.", "gear", "step 2 of 5")
+
+def f_step3():
+    return f_card("The checks run on a copy", "Your original file is never touched; only a copy is checked.", "layers", "step 3 of 5")
+
+def f_step4():
+    o = f_card("Your file comes back, with comments", "A commented copy of your chapter, plus a short report, land back on Drive.", "doc", "step 4 of 5")
+    o += f'<rect x="24" y="26" width="{W-48}" height="{H-52}" rx="14" fill="none" stroke="{ACCENT}" stroke-width="3"/>'
+    o += f'<text x="{W-38}" y="70" fill="{ACCENT}" font-size="10" text-anchor="end" font-weight="700" letter-spacing="1">THIS IS THE MOMENT THAT MATTERS</text>'
+    return o
+
+def f_step5():
+    return f_card("Two links land in your inbox", "Christophe emails you both: the commented copy and the report. No attachments.", "mail", "step 5 of 5")
+
+def f_checks_top():
     return f_section("Four checks", "Four checks, one report",
-                     "Each check reports what it finds as comments and in a short report. Nothing in your text is changed.",
-                     motif_tiles(FOUR))
+                      "Each one below says what it checks, what runs it, and its limit.",
+                      motif_tiles(FOUR))
+
+def f_check_layout():
+    return f_panel("Layout, with MLA", [
+        ("Checks", "margins, line spacing, indents, block quotations, the page header"),
+        ("Runs as", "free software on Christophe's computer that reads your file's formatting"),
+        ("Limit", "layout only, it does not read what your chapter says"),
+    ], tg="check 1 of 4")
+
+def f_check_language():
+    return f_panel("Language", [
+        ("Checks", "grammar, spelling and phrasing that doesn't read as academic English"),
+        ("Runs as", "LanguageTool, a free grammar checker, on his computer; Claude reads only the flagged lines"),
+        ("Limit", "suggestions only, a few issues still slip through while this is tuned"),
+    ], tg="check 2 of 4")
+
+def f_check_originality():
+    return f_panel("Originality", [
+        ("Checks", "your sources, your other chapters, open research papers and the open web"),
+        ("Runs as", "free software on Christophe's computer; only short phrases ever leave the machine"),
+        ("Limit", "not Oran 2's Turnitin, no licensed journals or its archive of past student papers"),
+    ], tg="check 3 of 4")
+
+def f_check_machinetext():
+    return f_panel("Machine-written text signal", [
+        ("Checks", "whether a passage reads more machine-like than your own usual style"),
+        ("Runs as", "a free AI model on Christophe's computer, calibrated on writing samples you share"),
+        ("Limit", "a signal, never proof, needs a good number of your own texts to be reliable"),
+    ], tg="check 4 of 4")
 
 def f_examples():
     return f_panel("Examples of comments", [
@@ -57,7 +88,7 @@ def f_examples():
     ], tg="examples", note="Only the language line is from a real test; the others use invented numbers.")
 
 def f_privacy():
-    o = head("Privacy", "Where your text goes")
+    o = head_p("Privacy", "Where your text goes")
     tiles = [("Your files", "stay on Drive and on one computer", "folder"),
              ("His computer", "does the checks on a copy", "device"),
              ("Claude", "sees short flagged passages only", "chat")]
@@ -74,34 +105,43 @@ def f_privacy():
     o += f'<text x="240" y="274" fill="{MUTE}" font-size="10.5" text-anchor="middle">A few short phrases may be searched on the web to look for copies</text>'
     return o
 
+def head_p(eb, title): return eyebrow(eb) + wrap(title, 38, 76, 22, INK, 32, weight=700)[0]
+
 def f_limits():
     return f_card("Suggests, never decides",
                   "It will not rewrite your text, prove that a passage is machine-written, search the whole internet or replace the official check at submission.",
                   "shield", "limits")
 
 def f_part():
-    return steps2("Your part", "Four small things", [
-        "Keep using Zotero: nothing changes",
-        "Ask which MLA edition applies",
-        "Name the sources to compare",
-        "Share texts you wrote yourself"])
+    return f_steps("Your part", "Three small things", [
+        "Ask your supervisor for the university's thesis layout guide",
+        "Tell Christophe which sources to compare with your chapters",
+        "Share texts you wrote yourself in the Calibration folder"])
 
-# ---- node table: (xmind topic id, filename-suffix, fragment) ----
 SPEC = []
 def add(a, name, frag): SPEC.append((a, f"{PFX}_{name}.svg", frag))
 
-add("e95dc20a-cb7a-480b-b2cc-9bcde2b6073e", "00_root", f_root())
-add("cf484c1e-713b-459b-a51f-2b78d00b2289", "01_what-it-does", f_what())
-add("3f2e3ba3-c9b1-4314-98e9-6e1bd09174d6", "02_how-a-run-goes", f_run())
-add("fe559697-31e6-4280-b991-5e777226468c", "03_four-checks", f_checks())
-add("7dc683a0-28c3-470b-a5c0-1e2ce5efc442", "04_examples", f_examples())
-add("eb544a1d-92a2-4cad-89b2-2310d6ffe50d", "05_where-your-text-goes", f_privacy())
-add("39fb73ff-97d1-4def-b254-255a023f9dcb", "06_what-it-will-not-do", f_limits())
-add("d78359bc-ee54-4d7c-8970-a0c794039af0", "07_what-we-need-from-you", f_part())
+add("18bec776-9234-46ff-88e5-094284a8cab3", "00_root", f_root())
+add("5e720e81-d0fa-4344-b272-415f9120795e", "01_what-it-does", f_what())
+add("da6fdf74-b8c1-4df7-a5b1-7bf7624dbfb7", "02_how-a-run-goes", f_run_top())
+add("2609796e-208d-4afc-a2a1-043033a4ba5c", "02a_step1-drop-file", f_step1())
+add("f08bc03a-265b-4487-8e22-f598a4c412f9", "02b_step2-starts-checker", f_step2())
+add("e854418b-f485-486f-9c36-a8bb051c8520", "02c_step3-runs-on-copy", f_step3())
+add("853bdfda-b0fd-4a2a-b19f-feb4b8184090", "02d_step4-comes-back", f_step4())
+add("152ce42e-500f-45b7-8066-36f313f5540e", "02e_step5-two-links", f_step5())
+add("dcea6856-003f-4e17-8561-950f9053ea78", "03_four-checks", f_checks_top())
+add("1c0d3045-bfd6-41eb-a8fd-8bd8de4849aa", "03a_check-layout", f_check_layout())
+add("4316a9ec-4e41-49aa-aa6a-f8ace0cbf8f4", "03b_check-language", f_check_language())
+add("24ad85a9-e6e3-40c8-94de-5575d77c82e9", "03c_check-originality", f_check_originality())
+add("15f2af3b-27bb-4468-a598-9d89d2cf12a5", "03d_check-machine-text", f_check_machinetext())
+add("bb4a35a1-91de-4af1-a596-e5cdbb9eb427", "04_examples", f_examples())
+add("de4d3495-cb7b-4a8d-a789-a1e5399b18fa", "05_where-your-text-goes", f_privacy())
+add("cc8df081-d73f-41c7-bdb4-dd7aef5dd14d", "06_what-it-will-not-do", f_limits())
+add("26ae9f26-6e2a-4337-9b7c-58caefa6697b", "07_what-we-need-from-you", f_part())
 
 write_all(OUT, SPEC, [
  "# Thesis checker — visual assets", "",
- "Flat-vector SVGs for the Xmind sheet \"Your thesis checker\" (file `mKRiB2a3`): one on the centre topic, one per top-level branch.", "",
- "Naming: `Thesis_Checker_<NN>_<branch-slug>.svg` — 00 = centre, then branch order.", "",
+ "Flat-vector SVGs for the merged Xmind sheet \"Souhila: your thesis checker\" (file `mKRiB2a3`): centre, one per top branch, one per run-step, one per check.", "",
+ "Naming: `Thesis_Checker_<NN[letter]>_<slug>.svg`.", "",
  f"Raw base: `{RAWBASE}/`", "",
  "| Xmind node id | file |", "|---|---|"])
