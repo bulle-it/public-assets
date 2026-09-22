@@ -67,12 +67,11 @@ def f_rules():
     ], tg="rules")
 
 def f_next():
-    return steps2("Next steps", "Five small steps", [
-        "SearXNG with Brave Search: built and tested",
-        "Test rare passages, not only famous ones",
-        "Read Brave's terms on automated use",
-        "Check the two canaries in autumn",
-        "Register for the free CORE key"])
+    return steps2("Next steps", "Still open", [
+        "Wire semantic match into Qdrant embeddings",
+        "Check canary A on 2026-09-28 and 2026-10-21",
+        "Check canary C on 2026-09-29 and 2026-10-22",
+        "Test on her real chapters, once she provides them"])
 
 SPEC = []
 def add(a, name, frag): SPEC.append((a, f"{PFX}_{name}.svg", frag))
