@@ -1,0 +1,225 @@
+=== chapeau | Chapeau
+# Démos Claude : un seul cerveau, trois portes ::cover
+> Commencer par Claude Web et ne changer de porte que lorsqu'un signal apparaît. Chaque démo vient d'un projet réel de Bulle IT ou d'une prise en main simple, et porte le tag du Claude qu'elle utilise.
+## Trois portes vers le même Claude ::section
+- Claude Web : je discute ; claude.ai dans le navigateur, rien à installer ::card:globe
+- Claude Desktop : je m'équipe puis je délègue ; l'application sur le poste, mes fichiers, mes connecteurs, le mode Cowork ::card:device
+- Claude Code : je fais construire ; un agent sur un dossier de projet qui lance des programmes sur mon poste ::card:term
+- Un seul compte : conversations et Projects synchronisés entre web, Desktop et mobile ::card:sync
+- Plusieurs tailles de modèle : Haiku le plus rapide, Sonnet au quotidien, Opus pour les tâches complexes ::card:brain
+## Quelle porte pour quelle tâche ::section
+- Une question, une réponse, je garde la main : Claude Web ::card:chat
+- Mes fichiers ou mes mails, je valide chaque étape : Claude Desktop en mode Chat ::card:plug
+- Je décris un résultat, Claude me le rend fini : Claude Desktop en mode Cowork ::card:layers
+- Tâche répétée, navigateur, impression, fichiers lourds ou confidentiels : Claude Code ::card:gear
+- Règle d'or : commencer par la porte la plus simple et ne changer que sur un signal {emphasis} ::card:target
+## Nos projets et leurs démos ::section
+### Office_git : la bureautique {label: Claude Code} ::project
+- La procuration : remplie, imprimée, archivée {label: Claude Code}
+- /fly : le vol direct le moins cher avec parking navette {label: Claude Code}
+- Bureautique en série : /email, /transcript, /sick-leave {label: Claude Code}
+### Accounting_git : la comptabilité {label: Claude Code} ::project
+- Documents du comptable : lire, signer, archiver, répondre {label: Claude Code}
+- Justificatifs manquants rattachés à la banque {label: Claude Code}
+### Training_git : la formation {label: Claude Code} ::project
+- Un quiz interactif créé en une phrase {label: Claude Web}
+- Cette carte mentale construite par Claude {label: Claude Desktop}
+- /remake : le montage vidéo automatique {label: Claude Code}
+- /dawtool : séparer une chanson puis en faire un karaoké {label: Claude Code}
+### JobSeeking_git : la veille emploi {label: Claude Code} ::project
+- Veille emploi multi-sources : alertes, recherches, notation, suivi {label: Claude Code}
+- Candidatures préparées jusqu'au dernier clic, jamais envoyées sans moi {label: Claude Code}
+### Lucerna_git : la relecture de thèse {label: Claude Code} ::project
+- Mise en page, langue et citations vérifiées sur le poste {label: Claude Code}
+- Originalité et texte écrit par une IA : contrôles locaux, sans service externe payant {label: Claude Code}
+### 00_Head_AI_Transverse_AI_git : le socle commun {label: Claude Code} ::project
+- Un projet est une unité copiable {label: Claude Code}
+- Capacités partagées : envoi de mail, recherche dans toutes les boîtes, Drive, Contacts {label: Claude Code}
+### Projets sans démo pour l'instant ::project
+- Hosting_git : héberger nos sites web en continu ; en construction {label: Claude Code}
+- OptimizingSolarProduction_git : piloter la production solaire ; en découverte {label: Claude Code}
+### Démos de prise en main, hors projet ::project
+- La barrette de RAM 16 Go la moins chère en France {label: Claude Web}
+- Réécrire un e-mail délicat {label: Claude Web}
+- Résumer un long document et préparer une réunion {label: Claude Web}
+- Un Project pour le quotidien {label: Claude Web}
+- Résumer un PDF local et préparer le mail {label: Claude Desktop}
+- Analyser un tableau du Drive et le croiser avec un mail {label: Claude Desktop}
+- Dix factures PDF deviennent un tableau Excel {label: Claude Desktop}
+- Trier et renommer un lot de fichiers {label: Claude Desktop}
+## Statut de chaque démo ::section
+- Démo en direct : se joue devant les apprenants ::card:eye
+- Démo à enregistrer : pas encore de vidéo ::card:camera
+- Vidéo à héberger : vidéo prête, lien à publier ::card:download
+- À préparer : exemple prévu, pas encore joué ::card:list
+- Lien privé à publier : visible du seul propriétaire tant qu'il n'est pas publié ::card:shield
+## Bonnes pratiques et limites ::section
+- Donner le contexte : rôle, objectif, format, destinataire ; avancer par petits pas ::card:chat
+- Vérifier les chiffres et les faits importants avant d'envoyer ou de signer ::card:check
+- Données sensibles : décider ce qu'on partage, traiter en local ce qui est confidentiel ::card:shield
+- En formation : données d'exemple fictives, vidéos floutées, bip sur les mots sensibles ::card:camera
+
+=== web | Claude Web
+# Claude Web : je discute ::cover
+> Porte d'entrée par défaut : claude.ai dans le navigateur, sur le même compte que Desktop et mobile. On ne la quitte que lorsque Claude doit agir sur mes vrais fichiers ou mes outils.
+## Ce que c'est ::section
+- claude.ai dans le navigateur, rien à installer ::card:globe
+- Claude ne voit que ce que j'écris ou joins : pas mes fichiers, pas mes mails ::card:eye
+- Pour une info récente, il lance une recherche web et cite ses sources ::card:search
+- Installable comme application depuis Chrome : identique au web, sans accès au poste ::card:device
+## Régler Claude Web en français ::section
+- Langue : Paramètres → Général → Langue → Français ::card:gear
+- Confidentialité : désactiver « Contribuez à améliorer nos modèles IA » ::card:shield
+- Recherche web : à activer, sinon Claude répond de mémoire à sa date de coupure ::card:search
+- Projets : instructions permanentes et fichiers de référence qui regroupent les conversations ::card:folder
+## Démos ::section
+### La barrette de RAM 16 Go la moins chère en France {label: démo en direct} ::demo
+- Ce que voit l'apprenant : Claude lance une recherche web et cite ses sources
+- Sous le capot : l'outil de recherche web, activé par l'utilisateur
+- Pourquoi Claude Web suffit : tout se passe dans la conversation, aucune donnée locale
+- Limite : sans recherche web, Claude répond de mémoire et peut être dépassé
+### Un quiz interactif créé en une phrase {label: lien privé à publier} ::demo
+> Artifact de démonstration : quiz généraliste, lien privé tant qu'il n'est pas publié.
+- Ce que voit l'apprenant : une page interactive apparaît à côté du chat, modifiable à la demande
+- Sous le capot : un Artifact, page HTML et JavaScript générée par Claude
+- Pourquoi Claude Web suffit : le résultat est une page web, pas une action sur mon poste
+- Limite : partager le lien le rend visible ; vérifier le contenu avant
+### Réécrire un e-mail délicat {label: à préparer} ::demo
+- Ce que voit l'apprenant : je colle mon brouillon, Claude propose une version plus juste et plus courte
+- Sous le capot : simple conversation, le texte est fourni à la main
+- Pourquoi Claude Web suffit : rien à brancher, le texte est dans la conversation
+- Limite : je relis et j'envoie moi-même depuis ma messagerie
+### Résumer un long document et préparer une réunion {label: à préparer} ::demo
+- Ce que voit l'apprenant : je joins le document, Claude rend un résumé et un ordre du jour
+- Sous le capot : lecture du fichier joint, texte, PDF ou tableur
+- Pourquoi Claude Web suffit : le fichier est joint à la main, une seule fois
+- Limite : vérifier les chiffres importants dans le document d'origine
+### Un Project pour le quotidien {label: à préparer} ::demo
+- Ce que voit l'apprenant : je crée un Project et j'y dépose deux fichiers du quotidien
+- Sous le capot : consignes permanentes et fichiers de référence partagés par les conversations du Project
+- Pourquoi Claude Web suffit : tout reste dans le compte, sur tous les appareils
+- Limite : un fichier modifié sur mon poste doit être redéposé
+## Quand passer à Claude Desktop ::section
+- Signal : Claude doit lire mon vrai PDF, mon vrai mail, mon agenda ::card:flag
+- Alors : Claude Desktop avec connecteurs, Claude accède à mes données avec mon accord ::card:rocket
+
+=== desktop | Claude Desktop
+# Claude Desktop : je m'équipe, puis je délègue ::cover
+> L'application installée sur le poste : tout Claude Web, plus mes fichiers locaux, mes connecteurs et serveurs MCP, et le mode Cowork pour déléguer une tâche entière.
+## Ce que c'est ::section
+- Le même Claude installé sur le poste, Mac ou Windows ::card:device
+- Accès à mes fichiers locaux et à mes outils branchés : connecteurs et serveurs MCP ::card:plug
+- Mode Chat : je discute et je valide chaque étape ::card:chat
+- Mode Cowork : je décris le résultat, Claude enchaîne les étapes seul ; offres payantes ::card:layers
+- Desktop héberge aussi l'onglet Code ::card:term
+## Installer et régler Claude Desktop ::section
+- Installation : téléchargement depuis claude.ai, connexion au même compte ::card:download
+- Langue : Paramètres → Général → Langue ::card:gear
+- Confidentialité : refuser l'entraînement dès l'assistant d'installation ::card:shield
+- Connecteurs : Gmail, Drive, Agenda ; Claude lit mes données avec mon accord ::card:plug
+- Extensions et MCP : pour chaque outil, toujours autoriser ou demander ::card:hand
+## Démos en mode Chat ::section
+### Résumer un PDF local et préparer le mail {label: démo en direct} ::demo:Chat
+- Ce que voit l'apprenant : je glisse un PDF, Claude le résume puis prépare le mail dans ma vraie boîte Gmail
+- Sous le capot : lecture du fichier local par l'application et connecteur Gmail
+- Pourquoi Claude Desktop : le fichier est sur mon poste et la boîte mail est branchée
+- Garde-fou : rien ne part sans mon clic
+### Cette carte mentale construite par Claude {label: démo en direct} ::demo:Chat
+> Les quatre onglets de ce fichier et toutes leurs vignettes ont été construits par Claude à travers le connecteur Xmind.
+- Ce que voit l'apprenant : je demande une carte structurée, elle apparaît dans mon Xmind
+- Sous le capot : connecteur MCP Xmind pour créer la carte, ajouter notes, liens et vignettes
+- Pourquoi Claude Desktop : l'outil Xmind est branché sur mon compte, Claude agit dedans
+- Limite : je relis la carte avant de la partager
+### Analyser un tableau du Drive et le croiser avec un mail {label: à préparer} ::demo:Chat
+- Ce que voit l'apprenant : Claude lit le tableau du Drive et le mail lié, puis rend une synthèse
+- Sous le capot : connecteurs Drive et Gmail, lecture seule
+- Pourquoi Claude Desktop : deux sources branchées, aucune copie à la main
+- Limite : Claude ne lit que ce que les connecteurs autorisent
+## Démos en mode Cowork ::section
+### Dix factures PDF deviennent un tableau Excel {label: démo à enregistrer} ::demo:Cowork
+> Aucun enregistrement à ce jour : prévoir dix factures fictives et une vidéo OBS.
+- Ce que voit l'apprenant : je désigne un dossier, Claude extrait fournisseur, date et montant, et livre un fichier .xlsx
+- Sous le capot : lecture de PDF et création de tableur dans un dossier autorisé
+- Pourquoi Cowork : dix fichiers traités seul puis un livrable, pas dix allers-retours
+- Garde-fou : factures d'exemple fictives uniquement
+### Trier et renommer un lot de fichiers {label: à préparer} ::demo:Cowork
+- Ce que voit l'apprenant : je décris la règle de nommage, Claude trie et renomme tout le dossier
+- Sous le capot : travail dans le seul dossier que je lui ouvre
+- Pourquoi Cowork : une règle, des dizaines de fichiers, un seul résultat à vérifier
+- Garde-fou : Claude demande ma permission avant de supprimer un fichier
+## Quand passer à Claude Code ::section
+- Signal : ce travail doit se refaire chaque mois, tout seul ::card:clock
+- Signal : il faut se connecter à des sites, piloter un navigateur, imprimer ::card:globe
+- Signal : fichiers énormes ou confidentiels qui ne doivent pas quitter le PC ::card:shield
+- Alors : Claude Code, un agent sur mon poste avec des règles écrites une fois ::card:rocket
+
+=== code | Claude Code
+# Claude Code : je fais construire ::cover
+> Un agent qui travaille dans un dossier de projet : il lit, écrit et lance des programmes sur mon poste. Toutes les démos de cet onglet viennent de nos projets réels.
+## Ce que c'est ::section
+- Un agent sur un dossier de projet : il lit, écrit, lance des commandes et des programmes ::card:term
+- Le savoir-faire reste dans des fichiers : CLAUDE.md pour les règles, memory pour la mémoire, skills pour les commandes ::card:book
+- Quatre portes : onglet Code de Desktop, extension VS Code, terminal, claude.ai/code dans le cloud ::card:grid
+## Régler Claude Code ::section
+- Modes de permission : Manuel, Accepter les modifications, Plan, Auto ::card:hand
+- Règles permanentes : un fichier CLAUDE.md à la racine du projet ::card:doc
+- Outils autorisés : fichier .claude/settings.json, liste blanche de commandes ::card:shield
+- Skills : un fichier texte par commande dans .claude/commands ::card:list
+## Démos bureautique ::section
+### La procuration : remplie, imprimée, archivée {label: vidéo à héberger} ::demo:office:/procuration
+> Vidéo complète de 13'24'' et pilote de 30'' dans Training_git/Outputs ; données personnelles floutées par /remake.
+- Ce que voit l'apprenant : je décris le résultat, Claude retrouve mes documents dans Drive, prépare le formulaire, imprime et archive
+- Sous le capot : outils PDF, commande d'impression, Drive, connecteur Xmind pour expliquer la démarche
+- Pourquoi Claude Code : imprimer, remplir le PDF officiel et classer demandent d'agir sur mon poste
+- Limite : je relis le document imprimé avant de signer
+### /fly : le vol direct le moins cher avec parking navette {label: lien privé à publier} ::demo:office:/fly
+> Rapport interactif « Fly Paris–Oran » produit par le skill : lien privé à publier, ou à remplacer par une exécution de démonstration.
+- Ce que voit l'apprenant : un tableau avec un prix cliquable par cellule, un rapport interactif et un mail récapitulatif
+- Sous le capot : navigateur automatisé, aéroports résolus selon le lieu de départ, quatre moteurs de vol, plusieurs parkings
+- Pourquoi Claude Code : piloter un navigateur sur plusieurs sites de prix et refaire la même recherche à chaque voyage
+- Limite : un site refondu peut casser la lecture ; un échec reste un lien, jamais un faux « pas de vol »
+### Bureautique en série : /email, /transcript, /sick-leave {label: démo en direct} ::demo:office:/email
+- /email : sept comptes, pièce jointe retrouvée dans le Drive, jamais d'envoi sans go explicite
+- /transcript : audio sensible transcrit en local, synthèse rédigée sous forme de courrier
+- /sick-leave : justificatifs d'un dossier triés, renommés, contrôlés puis transmis
+- Pourquoi Claude Code : tâches répétées, plusieurs comptes et sites, garde-fous écrits une fois dans le skill
+## Démos comptabilité ::section
+### Documents du comptable : lire, signer, archiver, répondre {label: réalisée} ::demo:accounting:/signature
+> En formation : documents d'exemple uniquement, aucun montant ni identifiant à l'écran.
+- Ce que voit l'apprenant : six PDF reçus par mail, chaque signature apposée au bon endroit, archivés dans le Drive
+- Sous le capot : recherche du mail, tampon de signature appliqué par un script local, brouillon de réponse
+- Pourquoi Claude Code : chaque document demande sa signature à un endroit différent, vérifié page par page
+- Garde-fou : l'image de signature reste sur le poste ; aucun mail ne part sans go
+### Justificatifs manquants rattachés à la banque {label: réalisée} ::demo:accounting:/justificatifs
+- Ce que voit l'apprenant : le comptable signale des pièces manquantes ; six factures téléchargées puis rattachées
+- Sous le capot : factures récupérées sur les portails fournisseurs, renommées, plan de rapprochement montré avant envoi
+- Pourquoi Claude Code : plusieurs sites avec connexion, un plan à valider, une vérification finale
+- Garde-fou : je tape moi-même le code bancaire et le code SMS
+## Démos audio et vidéo ::section
+### /remake : le montage vidéo automatique {label: vidéo à héberger} ::demo:training:/remake
+- Ce que voit l'apprenant : une vidéo brute de 26'00'' devient 17'18'' ; temps morts coupés, son nivelé, données floutées, sous-titres
+- Sous le capot : Whisper en local, ffmpeg par tronçons de 60 secondes, OCR image par image
+- Pourquoi Claude Code : une vidéo de plusieurs Go et des données confidentielles qui restent sur le PC
+- Limite : l'OCR ne voit ni logo ni flash très court ; je regarde la vidéo en entier avant de publier
+### /dawtool : séparer une chanson puis en faire un karaoké {label: vidéo à héberger} ::demo:training:/dawtool
+- Ce que voit l'apprenant : batterie, basse, voix et autres séparées, pistes dans Reaper, vidéo karaoké aux paroles surlignées
+- Sous le capot : Demucs sur la carte graphique, Whisper pour les paroles horodatées, Reaper piloté par script
+- Pourquoi Claude Code : fichiers audio lourds, calcul sur la carte graphique, logiciel installé sur le poste
+- Limite : pour une œuvre protégée, copie d'entraînement personnelle uniquement
+## Démos veille et recherche ::section
+### Veille emploi : /daily-full-run {label: démo en direct} ::demo:jobseeking:/daily-full-run
+- Ce que voit l'apprenant : alertes mail et recherches multi-sites, offres notées, une Google Sheet de suivi
+- Sous le capot : lecture des alertes sans navigateur, sessions enregistrées pour les sites, notation pondérée
+- Pourquoi Claude Code : plusieurs sources chaque jour, une seule passe, un seul suivi
+- Garde-fou : pause après le suivi, aucune candidature avant mon ok, jamais de clic sur Envoyer
+### Relecture de thèse en local {label: testée sur données d'essai} ::demo:lucerna:/lucerna
+- Ce que voit l'apprenant : mise en page, langue, citations et originalité vérifiées, un rapport par contrôle
+- Sous le capot : modèles et outils lancés sur le poste, carte graphique locale ; Claude ne voit que les passages signalés
+- Pourquoi Claude Code : un texte inédit et confidentiel, des outils locaux et gratuits
+- Garde-fou : des suggestions seulement, le texte n'est jamais réécrit
+## Pour aller plus loin ::section
+- Automatiser dans le temps : session VS Code, tâche planifiée dans le cloud, ou cron local ::card:clock
+- Sous-agents et MCP : un agent qui en pilote d'autres, des outils tiers branchés ::card:split
+### Un projet est une unité copiable {label: démo en direct} ::demo:00:ls
+- Ce que voit l'apprenant : huit projets, une même structure, règles et mémoire rangées dans le dossier du projet
+- Pourquoi Claude Code : ce qui est appris reste dans des fichiers que je copie, versionne et partage
