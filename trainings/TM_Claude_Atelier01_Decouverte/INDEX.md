@@ -44,6 +44,10 @@ Raw base: `https://raw.githubusercontent.com/bulle-it/public-assets/main/trainin
 | `4806318d-a5cf-47ec-a433-7fbda1f775ca` | TM_Claude_Atelier01_Decouverte_03b_niveau3-cas-usage.svg |
 | `73441ae0-9d29-41f5-9176-5765eeddf3b9` | TM_Claude_Atelier01_Decouverte_03b_niveau4-je-fais-construire.svg |
 | `a057ed4f-99ff-45c1-b16b-9260b169b221` | TM_Claude_Atelier01_Decouverte_03b_niveau4-cas-usage.svg |
+| `b06678b1-2beb-41dc-a99d-67113e12353a` | TM_Claude_Atelier01_Decouverte_03b_niveau1-regle.svg |
+| `9a092ede-f9a1-4f64-88f4-2af0faaf1563` | TM_Claude_Atelier01_Decouverte_03b_niveau2-regle.svg |
+| `b0a8a617-a946-4078-8d6d-b578e39ac20b` | TM_Claude_Atelier01_Decouverte_03b_niveau3-regle.svg |
+| `9d922d0b-1134-4dc2-aae2-7edb14004472` | TM_Claude_Atelier01_Decouverte_03b_niveau4-regle.svg |
 | `6a18ddbb-807f-4639-a318-516973256dfe` | TM_Claude_Atelier01_Decouverte_04_bonnes-pratiques.svg |
 | `f3b82972-3004-4c23-91c1-7f094491069a` | TM_Claude_Atelier01_Decouverte_04_donner-le-contexte.svg |
 | `63888b66-6b72-4a13-a517-d12fe23cb142` | TM_Claude_Atelier01_Decouverte_04_verifier-et-partager.svg |

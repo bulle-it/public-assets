@@ -101,6 +101,11 @@ add("c4ee4e99-601e-4aa8-b2c0-872dc3d5cee0","03b_niveau3-je-delegue",f_card("Nive
 add("4806318d-a5cf-47ec-a433-7fbda1f775ca","03b_niveau3-cas-usage",f_card("Cas d'usage","« Prends ces 10 factures PDF et fais-moi un tableau Excel récapitulatif »","table","Niveau 3"))
 add("73441ae0-9d29-41f5-9176-5765eeddf3b9","03b_niveau4-je-fais-construire",f_card("Niveau 4 — Je fais construire","Sur un projet complet, en autonomie.","term","Claude Code"))
 add("a057ed4f-99ff-45c1-b16b-9260b169b221","03b_niveau4-cas-usage",f_card("Cas d'usage","« Écris-moi un script qui renomme mes photos par date de prise de vue »","gear","Niveau 4"))
+# rules added 2026-11-25: what defines each level (who brings the content, who fetches it, ...)
+add("b06678b1-2beb-41dc-a99d-67113e12353a","03b_niveau1-regle",f_card("Règle du niveau 1","C'est moi qui apporte le contenu : je tape, je joins un fichier ou je range mes documents dans un Project.","chat","Niveau 1"))
+add("9a092ede-f9a1-4f64-88f4-2af0faaf1563","03b_niveau2-regle",f_card("Règle du niveau 2","Claude va chercher le contenu ou agit lui-même dans mes outils branchés, avec mon accord.","plug","Niveau 2"))
+add("b0a8a617-a946-4078-8d6d-b578e39ac20b","03b_niveau3-regle",f_card("Règle du niveau 3","Claude enchaîne seul plusieurs étapes et me rend un livrable à vérifier.","steer","Niveau 3"))
+add("9d922d0b-1134-4dc2-aae2-7edb14004472","03b_niveau4-regle",f_card("Règle du niveau 4","Claude agit sur un dossier de projet de mon poste, avec des règles écrites une fois.","term","Niveau 4"))
 
 # 04
 add("6a18ddbb-807f-4639-a318-516973256dfe","04_bonnes-pratiques",
