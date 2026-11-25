@@ -21,7 +21,7 @@ def f_cover():
       <rect x="0" y="0" width="96" height="64" rx="10" fill="{PANEL}" stroke="{STROKE}"/><rect x="0" y="0" width="96" height="16" rx="10" fill="{BUBBLE}"/><circle cx="10" cy="8" r="2.5" fill="{ACCENT}"/>
       <rect x="14" y="28" width="56" height="6" rx="3" fill="{BUBBLE}"/><rect x="14" y="40" width="42" height="6" rx="3" fill="{BUBBLE}"/><text x="48" y="82" fill="{MUTE}" font-size="11" text-anchor="middle">web</text>
       <rect x="116" y="0" width="96" height="64" rx="10" fill="{PANEL}" stroke="{STROKE}"/><rect x="130" y="12" width="68" height="40" rx="6" fill="{BUBBLE}"/><text x="164" y="82" fill="{MUTE}" font-size="11" text-anchor="middle">Desktop</text>
-      <rect x="232" y="0" width="96" height="64" rx="10" fill="{PANEL}" stroke="{STROKE}"/><circle cx="264" cy="32" r="12" fill="{ACCENT}" opacity="0.18"/><circle cx="292" cy="32" r="12" fill="{ACCENT}" opacity="0.18"/><path d="M270 32h16" stroke="{ACCENT}" stroke-width="3" stroke-linecap="round"/><text x="280" y="82" fill="{MUTE}" font-size="11" text-anchor="middle">Cowork</text>
+      <rect x="232" y="0" width="96" height="64" rx="10" fill="{PANEL}" stroke="{STROKE}"/><circle cx="264" cy="32" r="12" fill="{ACCENT}" opacity="0.18"/><circle cx="292" cy="32" r="12" fill="{ACCENT}" opacity="0.18"/><path d="M270 32h16" stroke="{ACCENT}" stroke-width="3" stroke-linecap="round"/><text x="280" y="82" fill="{MUTE}" font-size="11" text-anchor="middle">tâche longue</text>
       <rect x="348" y="0" width="96" height="64" rx="10" fill="{INK}"/><text x="362" y="28" fill="{ACCENT}" font-size="13" {MONO}>&gt;_</text><rect x="362" y="36" width="48" height="5" rx="2.5" fill="#5B554D"/><rect x="362" y="46" width="30" height="5" rx="2.5" fill="#5B554D"/><text x="396" y="82" fill="{MUTE}" font-size="11" text-anchor="middle">Code</text>
     </g>'''
 
@@ -73,8 +73,8 @@ add("71b72363-b2c8-4217-9c80-41cae95a733e","02_api",f_card("API","Paiement à l'
 
 # 03
 add("7d120daa-7d45-4121-8e8e-a63f5c5557bc","03_composants",
-    f_section("Section 3","Les composants","Quatre portes d'entrée vers le même Claude — de la plus simple à la plus outillée.",
-              motif_tiles([("Claude web","globe"),("Desktop","device"),("Cowork","steer"),("Code","term")])))
+    f_section("Section 3","Un seul cerveau, trois portes","claude.ai, Desktop et Claude Code. Dans Desktop, Chat et Cowork ne font qu'une conversation.",
+              motif_tiles([("claude.ai","globe"),("Desktop","device"),("Code","term")])))
 add("796c52fb-8eb5-4d8b-9596-d999a64d38a2","03_claude-web",
     f_browser("Claude web — navigateur, rien à installer","claude.ai","",["Bonjour ! Comment puis-je aider ?"],"Envoyer un message à Claude…"))
 add("ac4b6bf5-8b8c-445e-971b-b0693fe1fd3a","03_claude-web-navigateur",f_card("Navigateur, rien à installer","Le point d'entrée par défaut. Une adresse : claude.ai.","globe","Section 3"))
@@ -82,8 +82,8 @@ add("2b3afea8-20ea-4323-9586-29dbe48379ad","03_claude-desktop",
     f_desktop("Claude Desktop","App Mac / Windows",["Tout le web, plus l'accès à ton poste","Connecteurs (Gmail, Drive…) + serveurs MCP","Extensions installables en un clic"]))
 add("b3aab6ab-2553-4cbb-807b-b0333d0bd2a0","03_desktop-connecteurs-mcp",f_card("Connecteurs + serveurs MCP","Des outils « branchés » sur Claude : tes services et des capacités locales.","plug","Section 3"))
 add("a4271798-738b-462a-af2c-d30ee01542dc","03_cowork",
-    f_toggle("Cowork — un mode, pas une app","Chat","Cowork",1,"Tu discutes, tu valides chaque étape.","Tu délègues : Claude planifie et enchaîne seul, sur ton poste (Desktop) ou dans le cloud (web / mobile). Offres payantes."))
-add("c437c594-b2ec-4213-87c9-e3bf3d8b9d71","03_cowork-mode-delegation",f_card("Mode délégation","Claude enchaîne seul une tâche en plusieurs étapes. Offres payantes.","steer","Section 3"))
+    f_card("Tâche longue, même conversation","Tu délègues : Claude planifie et enchaîne seul, sur ton poste (Desktop) ou dans le cloud. Chat et Cowork ne font qu'un.","steer","Section 3"))
+add("c437c594-b2ec-4213-87c9-e3bf3d8b9d71","03_cowork-mode-delegation",f_card("Tâche longue","Claude enchaîne seul une tâche en plusieurs étapes.","steer","Section 3"))
 add("fcfa7c44-ba6e-4e31-bf5f-e4d71da3d3e6","03_claude-code",
     f_terminal("Claude Code — agent sur un dossier / projet","~/projets/mon-app","claude",["Lecture du dossier…","J'ai trouvé 3 scripts. Que veux-tu faire ?"]))
 add("adcff8c7-f361-4565-9450-311f5099cbde","03_code-terminal-agent",f_card("Terminal — agent sur un projet","Sur un dossier : code, scripts, skills. Il lit, écrit et lance des commandes.","term","Section 3"))
@@ -93,11 +93,11 @@ add("3ae6be98-0b35-4345-a0d3-036cf48030fc","03_claude-web-pwa",f_card("PWA insta
 add("46f93ca1-cb00-4099-b821-1a7560a9f7a5","03b_niveaux-acquisition",
     f_section("Niveaux","Niveaux d'acquisition","Quatre niveaux, corrélés aux composants : je discute → je m'équipe → je délègue → je fais construire.",
               motif_tiles([("Niveau 1","chat"),("Niveau 2","plug"),("Niveau 3","steer"),("Niveau 4","term")])))
-add("b8695c20-8cfa-4ab4-8ff4-9ce4f1d056a7","03b_niveau1-je-discute",f_card("Niveau 1 — Je discute","Une question, une réponse. Le point d'entrée le plus simple.","chat","Claude web"))
+add("b8695c20-8cfa-4ab4-8ff4-9ce4f1d056a7","03b_niveau1-je-discute",f_card("Niveau 1 — Je discute","Une question, une réponse. Le point d'entrée le plus simple.","chat","claude.ai"))
 add("72ee2073-786c-416e-bc87-949cea25b59c","03b_niveau1-cas-usage",f_card("Cas d'usage","« Quelle est la RAM 16 Go la moins chère en France ? »","search","Niveau 1"))
 add("df0a694b-abea-4e32-80f2-08b67c3bd262","03b_niveau2-je-mequipe",f_card("Niveau 2 — Je m'équipe","Je branche mes fichiers et mes outils.","plug","Claude Desktop"))
 add("8cc579fc-a908-47c1-93a6-b4fea93416d4","03b_niveau2-cas-usage",f_card("Cas d'usage","Résumer un PDF local et préparer un mail via le connecteur Gmail","mail","Niveau 2"))
-add("c4ee4e99-601e-4aa8-b2c0-872dc3d5cee0","03b_niveau3-je-delegue",f_card("Niveau 3 — Je délègue","Je décris un résultat, Claude enchaîne seul.","steer","Cowork"))
+add("c4ee4e99-601e-4aa8-b2c0-872dc3d5cee0","03b_niveau3-je-delegue",f_card("Niveau 3 — Je délègue","Je décris un résultat, Claude enchaîne seul.","steer","Desktop, tâche longue"))
 add("4806318d-a5cf-47ec-a433-7fbda1f775ca","03b_niveau3-cas-usage",f_card("Cas d'usage","« Prends ces 10 factures PDF et fais-moi un tableau Excel récapitulatif »","table","Niveau 3"))
 add("73441ae0-9d29-41f5-9176-5765eeddf3b9","03b_niveau4-je-fais-construire",f_card("Niveau 4 — Je fais construire","Sur un projet complet, en autonomie.","term","Claude Code"))
 add("a057ed4f-99ff-45c1-b16b-9260b169b221","03b_niveau4-cas-usage",f_card("Cas d'usage","« Écris-moi un script qui renomme mes photos par date de prise de vue »","gear","Niveau 4"))
@@ -129,8 +129,8 @@ add("692c89ad-7d71-4a6d-9602-eb101a7c7ade","05_compte-unique",f_card("Compte uni
 
 # 06
 add("b26fc04c-5f00-4c94-97e6-c883f1a0605d","06_exemples",
-    f_section("Section 6","Exemples — démo live","Une démo par composant, puis la règle simple : Chat ou Cowork ?",
-              motif_tiles([("web","globe"),("Desktop","device"),("Cowork","steer"),("Code","term")])))
+    f_section("Section 6","Exemples — démo live","Une démo par porte, puis la règle simple : quelle porte ?",
+              motif_tiles([("claude.ai","globe"),("Desktop","device"),("Tâche longue","steer"),("Code","term")])))
 # 06 · Claude web
 add("a70392cc-37c9-433a-a525-c2c65deecbab","06_web",
     f_browser("Démo — Claude web","claude.ai","Quelle est la barrette de RAM 16 Go la moins chère en France ?",
@@ -146,17 +146,17 @@ add("71074e90-2572-4a34-89b1-a5e48626f9b6","06_desktop",
 add("37d9e46a-cb8d-4b94-9871-a695d4b4cc41","06_desktop_demo",f_card("Démo","« Résume ce PDF et prépare un mail pour l'envoyer à mon ami » (PDF local + connecteur Gmail)","mail","Claude Desktop"))
 add("86cf6960-1a6c-429b-b2e8-37063118e40e","06_desktop_complement",f_card("Complément d'infos","Ce qu'il faut retenir sur Claude Desktop.","list","Claude Desktop"))
 add("e6fb8428-6b4a-4d11-bfea-5ffea52dc41b","06_desktop_c1",f_card("L'app installée sur ton ordinateur","Tout le web + l'accès à ton poste.","device","Claude Desktop"))
-add("7f68c2fd-a1ae-48a0-9d14-6d3a1248463c","06_desktop_c2",f_card("Mode Chat","Tu discutes : une demande, une réponse, tu valides chaque étape.","chat","Claude Desktop"))
+add("7f68c2fd-a1ae-48a0-9d14-6d3a1248463c","06_desktop_c2",f_card("La conversation","Tu discutes : une demande, une réponse, tu valides chaque étape. Chat et Cowork ne font qu'un.","chat","Claude Desktop"))
 add("f19bee01-0f1f-4d31-93fa-c3a4c1325379","06_desktop_c3",f_card("Fichiers et outils branchés","Connecteurs, extensions — quand tu le lui demandes.","plug","Claude Desktop"))
 # 06 · Cowork
 add("bca59db6-5680-4e10-acf8-9135e36197ca","06_cowork",
-    f_desktop("Démo — Cowork","mode Cowork",["« Prends les 10 factures PDF de ce dossier…","…et fais-moi un tableau Excel récapitulatif »","Claude planifie, enchaîne, te rend le fichier"]))
-add("ff2b114e-270b-440a-a93a-8fd5ee98547e","06_cowork_demo",f_card("Démo","« Prends les 10 factures PDF de ce dossier et fais-moi un tableau Excel récapitulatif »","table","Cowork"))
-add("832ac009-22e4-44ac-babb-97c63b71eb7a","06_cowork_complement",f_card("Complément d'infos","Ce qu'il faut retenir sur Cowork.","list","Cowork"))
-add("e6c4a15d-6d79-4e6b-b164-f80d86287104","06_cowork_c1",f_card("Mode Cowork","Tu délègues : tu décris le résultat, Claude planifie et enchaîne les étapes seul.","steer","Cowork"))
-add("10c9169e-1f1f-48b4-afdf-1866d791ca80","06_cowork_c2",f_card("Il travaille dans les dossiers que tu ouvres","Et te rend un travail fini : fichiers, documents, tableaux.","folder","Cowork"))
-add("5183df5c-9549-425c-b830-969d1226ad75","06_cowork_c3",f_card("Tu gardes la main","Tu suis l'avancement, tu peux reprendre. Il demande avant de supprimer un fichier.","shield","Cowork"))
-add("1dff4854-b7f5-4cad-85b8-9c1ac330bfe0","06_cowork_c4",f_card("Même app que Desktop","On bascule entre « Chat » et « Cowork » dans la zone de message. Offres payantes.","split","Cowork"))
+    f_desktop("Démo — tâche longue","Desktop, même conversation",["« Prends les 10 factures PDF de ce dossier…","…et fais-moi un tableau Excel récapitulatif »","Claude planifie, enchaîne, te rend le fichier"]))
+add("ff2b114e-270b-440a-a93a-8fd5ee98547e","06_cowork_demo",f_card("Démo","« Prends les 10 factures PDF de ce dossier et fais-moi un tableau Excel récapitulatif »","table","Desktop, tâche longue"))
+add("832ac009-22e4-44ac-babb-97c63b71eb7a","06_cowork_complement",f_card("Complément d'infos","Ce qu'il faut retenir sur la tâche longue.","list","Desktop, tâche longue"))
+add("e6c4a15d-6d79-4e6b-b164-f80d86287104","06_cowork_c1",f_card("Tâche longue","Tu délègues : tu décris le résultat, Claude planifie et enchaîne les étapes seul.","steer","Desktop, tâche longue"))
+add("10c9169e-1f1f-48b4-afdf-1866d791ca80","06_cowork_c2",f_card("Il travaille dans les dossiers que tu ouvres","Et te rend un travail fini : fichiers, documents, tableaux.","folder","Desktop, tâche longue"))
+add("5183df5c-9549-425c-b830-969d1226ad75","06_cowork_c3",f_card("Tu gardes la main","Tu suis l'avancement, tu peux reprendre. Il demande avant de supprimer un fichier.","shield","Desktop, tâche longue"))
+add("1dff4854-b7f5-4cad-85b8-9c1ac330bfe0","06_cowork_c4",f_card("Même conversation que le Chat","Plus de bascule entre Chat et Cowork : Claude choisit de répondre vite ou d'enchaîner les étapes.","split","Desktop, tâche longue"))
 # 06 · Claude Code
 add("122f5849-55e4-413c-8501-a7c25fcf744f","06_code",
     f_terminal("Démo — Claude Code","~/photos","claude \"renomme mes photos par date de prise de vue\"",["Lecture des métadonnées EXIF…","42 fichiers renommés : 2026-08-14_0001.jpg …"]))
@@ -164,12 +164,12 @@ add("feca23d8-af57-4502-a195-bbbf2fe14293","06_code_demo",f_card("Démo","« Éc
 add("98f204ff-122c-4ca0-8066-a9608bcef6a2","06_code_complement",f_card("Complément d'infos","Ce qu'il faut retenir sur Claude Code.","list","Claude Code"))
 add("754b2796-32fd-4d0e-a0f7-474143a061ac","06_code_c1",f_card("Dans un terminal ou VS Code","Sur un dossier de projet.","term","Claude Code"))
 add("43b2596f-bf85-4ec1-a701-a709c810e457","06_code_c2",f_card("Il lit, écrit et lance des commandes","Pour construire ou corriger du code.","gear","Claude Code"))
-add("181ae8fd-33bb-4568-aeb7-a41ee1710545","06_code_c3",f_card("Même moteur que Cowork","Mais pour le code et l'automatisation.","term","Claude Code"))
+add("181ae8fd-33bb-4568-aeb7-a41ee1710545","06_code_c3",f_card("Même cerveau que la conversation","Mais pour le code et l'automatisation.","term","Claude Code"))
 # 06 · règle
 add("46a9d4d6-d41a-4307-996d-cdc8b900b6b6","06_chat-ou-cowork",
-    f_toggle("Chat ou Cowork ? La règle simple","Chat","Cowork",0,"Je discute — une question, une réponse, je garde la main.","Je délègue — je décris le résultat, Claude fait le travail et me le rend."))
-add("5eb50560-7af5-4d47-9b90-ca301fef9285","06_regle-chat",f_card("Chat : je discute","Une question, une réponse. Je garde la main.","chat","Règle"))
-add("f0d01b19-8a99-4eb4-8e63-2ea43d549740","06_regle-cowork",f_card("Cowork : je délègue","Je décris le résultat, Claude fait le travail et me le rend.","steer","Règle"))
+    f_panel("Quelle porte ? La règle simple",[("claude.ai","je discute : une question, une réponse, je garde la main"),("Desktop","je délègue : je décris le résultat, Claude me le rend"),("Claude Code","je fais construire : un agent sur un dossier de projet")],"Section 6"))
+add("5eb50560-7af5-4d47-9b90-ca301fef9285","06_regle-chat",f_card("claude.ai : je discute","Une question, une réponse. Je garde la main.","chat","Règle"))
+add("f0d01b19-8a99-4eb4-8e63-2ea43d549740","06_regle-cowork",f_card("Desktop : je délègue","Je décris le résultat, Claude fait le travail et me le rend, dans la même conversation.","steer","Règle"))
 
 # 07
 add("8befcad7-b338-49c6-8cc1-86ddddd3377f","07_on-se-lance",
@@ -191,9 +191,9 @@ add("e26a0d54-6faf-45bc-b601-1092b4e1aa34","08_configuration_menus",
 # 05b — Pour aller plus loin (added 2026-09-13, one branch per Composant, reusing its Niveau)
 add("9659aee7-2679-45cb-a3eb-84ab317d1dd5","05b_pour-aller-plus-loin",
     f_section("Section 5","Pour aller plus loin","Un aperçu des portes pour creuser plus loin, si tu le souhaites — pas besoin d'aller plus loin aujourd'hui.",
-              motif_tiles([("web","globe"),("Desktop","device"),("Cowork","steer"),("Code","term")])))
+              motif_tiles([("claude.ai","globe"),("Desktop","device"),("Tâche longue","steer"),("Code","term")])))
 add("81c644f3-b462-4336-be6a-1a96530c2b1f","05b_web-plus-loin",
-    f_card("Claude web → aller plus loin","Une porte pour creuser : les Artifacts.","globe","Niveau 1"))
+    f_card("claude.ai → aller plus loin","Une porte pour creuser : les Artifacts.","globe","Niveau 1"))
 add("ed9fbc7e-daac-4e54-81ae-407fa411d1a6","05b_web-artifacts",
     f_card("Artifacts","Documents, mini-apps générés et partageables depuis le chat.","grid","Niveau 1 — Je discute"))
 add("84ac48ab-cbc2-4e3c-a6fc-5f73c1e1463d","05b_desktop-plus-loin",
@@ -201,7 +201,7 @@ add("84ac48ab-cbc2-4e3c-a6fc-5f73c1e1463d","05b_desktop-plus-loin",
 add("121cb037-cf8e-4c4c-9635-67873815ff36","05b_desktop-mcp",
     f_card("MCP","Brancher des outils tiers (Xmind, Jira, Drive…) au-delà des connecteurs grand public.","plug","Niveau 2 — Je m'équipe"))
 add("4a9a9594-78da-4987-829a-ea1d7dc12c25","05b_cowork-plus-loin",
-    f_card("Cowork → aller plus loin","Une porte pour creuser : les sous-agents.","steer","Niveau 3"))
+    f_card("Desktop, tâche longue → aller plus loin","Une porte pour creuser : les sous-agents.","steer","Niveau 3"))
 add("b66a2c94-3c3f-4f07-b3f9-3a6363384486","05b_cowork-sous-agents",
     f_card("Sous-agents","Un agent qui en pilote d'autres en parallèle, sur une tâche complexe.","split","Niveau 3 — Je délègue"))
 add("06ce783e-5526-4997-af28-fad92f4b0eab","05b_code-plus-loin",
